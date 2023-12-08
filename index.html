@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Startup Name</title>
+    <style>
+      @media only screen and (max-width: 600px) {
+        section {
+          padding: 10px;
+        }
+        html{
+          width: 100%;
+          scroll-behavior: smooth;
+        }
+      }
+      /* Reset some default styles */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      a {
+        margin: 0;
+        padding: 0;
+        text-decoration: none; /* Remove underlines from links */
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f8f8;
+      }
+
+      header {
+        background-size: cover;
+        height: 78vh;
+        opacity: 0.9;
+        background-image: url(img/bg-img.png.jpeg);
+
+        /* background-color: #333; */
+        color: #fff;
+        padding: 25px;
+        text-align: center;
+      }
+      header p {
+        color: black;
+      }
+
+      section {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgb(182, 170, 170);
+        border-radius: 5px;
+      }
+      section h2 {
+        position: relative;
+        bottom: 68px; ;
+        font-size: 25px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        text-align: center;
+      }
+      section p {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      h2,
+      p {
+        color: #333;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      nav a {
+        color: white;
+        font-size: 20px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      nav a:hover {
+        color: grey;
+        transform: scale(1.5);
+      }
+      nav img {
+        height: 40px;
+      }
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        transition: background-color 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: #555;
+      }
+
+      /* Additional styles for responsiveness */
+      @media only screen and (max-width: 600px) {
+        section {
+          padding: 10px;
+        }
+      }
+
+      section p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin-left: 24px;
+}
+  /* Style for the Get in Touch section */
+#contact {
+  padding: 20px;
+  background-color: rgb(182, 170, 170);
+}
+
+/* Style for the contact form container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Style for form labels */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Style for form input fields */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Style for the submit button */
+.contact-form button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 20px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-left: 3px;
+  width: 100%;
+}
+
+/* Style for the submit button on hover */
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+
+      /* Footer styles */
+      footer {
+        background-color: #333;
+        padding: 10px;
+        position: relative;
+        bottom: 5px;
+        width: 100%;
+      }
+      footer p {
+        padding: 3px;
+        text-align: center;
+        color: palevioletred;
+      }
+      header img {
+        max-width: 100px; /* Adjust the max-width as needed */
+      }
+      .start-up {
+        width: 98%;
+        padding: 15px;
+        position: relative;
+        top: 59px;
+      }
+      .start-up p {
+        font-size: 20px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      h1 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: white;
+        font-size: 40px;
+      }
+      .touch-button {
+        display: inline-block;
+        padding: 15px 25px;
+        background-color: white;
+        color: grey;
+        border: none;
+        border-radius: 10px;
+        transition: background-color 0.3s;
+        position: absolute;
+        top: 247px;
+        margin-left: -56px;
+      }
+      .touch-button:hover {
+        background-color: #555;
+      }
+      /* Add some general styling to the services section */
+      #services {
+        padding: 20px;
+        background-color: #f7f7f7;
+      }
+
+      /* Style for each service container */
+      .service {
+        display: flex;
+        margin-bottom: 20px;
+        background-color: rgb(182, 170, 170);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+      }
+
+      /* Style for service images */
+      .service img {
+        width: 200px;          /* Adjust the width as needed    */
+        
+        object-fit: cover;
+      }
+
+      /* Style for service details */
+      .service-details {
+        padding: 20px;
+      }
+
+      /* Style for service titles */
+      .service-details h3 {
+        margin-top: 0;
+        color: #333;
+      }
+
+      /* Style for service descriptions */
+      .service-details p {
+        color: #666;
+      }
+
+      /* Responsive styling for smaller screens */
+      @media (max-width: 768px) {
+        .service {
+          flex-direction: column;
+        }
+
+        .service img {
+          width: 100%; /* Make the image full width in smaller screens */
+        }
+      }
+
+      .about-content img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container's width */
+  border-radius: 8px; /* Add a border-radius for rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+  margin-bottom: 20px; /* Add some space between the image and the text */
+  position: relative;
+  left: 86px;
+}
+.service-2{
+  background-color: white;
+}
+
+.head{
+  position: relative;
+  bottom: 15px;
+}
+
+.mail{
+  width: 50px;
+  position: relative;
+  top: 19px;
+  left: 2px;
+}
+#follow{
+  width: 50%;
+}
+#follow p{
+  position: relative;
+  bottom: 44px;
+  left: 115px;
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="img/logo.png" alt="Your Startup Logo" />
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#signup">Sign Up</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="start-up">
+        <h1>Social Media Agency</h1>
+        <p>
+          Welcome to where innovation meets influence. As a leading force in the
+          realm of social media management, we are dedicated to propelling your
+          brand to new heights through strategic campaigns, engaging content,
+          and data-driven insights.
+        </p>
+      </div>
+      <a href="#getintouch" class="touch-button">Get in Touch</a>
+    </header>
+
+    <section id="services">
+      <h2 class="head">Our Services</h2>
+
+      <div class="service">
+        <img src="img/service1.jpg.png" alt="Service 1 Image" />
+        <div class="service-details">
+          <h3>Social Media Management</h3>
+          <p>
+            Strategic planning and daily management of your social media
+            platforms to enhance brand visibility and engagement.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="img/service2.jpg" alt="Service 2 Image" class="service-2" />
+        <div class="service-details">
+          <h3>Content Creation</h3>
+          <p>
+            Compelling and shareable content tailored to your brand, ensuring a
+            consistent and captivating online presence.
+          </p>
+        </div>
+      </div>
+
+      <div class="service">
+        <img src="img/service3.jpg" alt="Service 3 Image" />
+        <div class="service-details">
+          <h3>Social Media Advertising</h3>
+          <p>
+            Targeted advertising campaigns to reach your audience and maximize
+            ROI across various social media platforms.
+          </p>
+        </div>
+      </div>
+
+      <!-- Add more services as needed -->
+    </section>
+
+    
+<section id="about-us">
+  <h2>About Us</h2>
+
+  <div class="about-content">
+    <img src="img/team photo.jpg" alt="Team Photo">
+    <p>At social media agency where innovation and creativity converge to redefine digital engagement. we have been at the forefront of social media evolution, helping brands forge meaningful connections with their audience.</p>
+
+    <p>At [Your Social Media Agency], we believe in the power of storytelling and the impact of authentic communication.
+      </p>
+      <p>
+        Discover the future of [Your Industry] with Social Media Agency. Join us
+        in creating something extraordinary!
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Get in Touch</h2>
+    
+      <div class="contact-form">
+        <form action="#" method="post">
+          <label for="name">Your Name:</label>
+          <input type="text" id="name" name="name" required>
+    
+          <label for="email">Your Email:</label>
+          <input type="email" id="email" name="email" required>
+    
+          <label for="message">Your Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+    
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+       
+
+    <section id="follow">
+      <h2>Contact Us</h2>
+      <p>
+        Have questions?   Mail  us  at 
+        <img src="img/mail.png-removebg-preview.png" alt="mail-photo" class="mail">
+        <a href="mailto:info@example.com">info@example.com</a>.
+      </p>
+    </section>        
+    </section>
+    <footer>
+      <p>&copy; 2023 Social Media Agency. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
